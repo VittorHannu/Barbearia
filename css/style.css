@@ -9,18 +9,14 @@
     --cor1: #212426;
     --cor2: #010D00;
     --cor3: #595952;
-    --cor4: #e0c9a0;
+    --cor4: #A69D8D;
     --cor5: #590202;
 }
 
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    position: relative;
-    z-index: -3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header { 
@@ -28,19 +24,20 @@ header {
     background-color: var(--cor2);
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 #header {
     display: flex;
-    width: 90%;
+    width: 1500px;
     max-width: 1500px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center ;
     align-items: center;
 }
 
 #logo {
-    min-width: 300px;
+    width: 150px;
     color: white;
     font-size: 30px; /* it was supposed to be 30px */
     text-transform: uppercase; /* set letters in caps lock */
@@ -53,8 +50,7 @@ header {
 }
 
 #logo p {
-    margin-left: 10px;
-    min-width: 235px;
+    margin-left: 10px;,
 }
 
 #botao-menu {
@@ -65,15 +61,20 @@ label[for='botao-menu'] {
     color: white;
     cursor: pointer;
     display: none;
+    position: absolute;
+    left: 50px;
 }
 
 nav {
     display: flex;
+    margin-left: auto;
+
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
+    background-color: #010D00;
     color: white;
     height: 70px;
     display: flex;
@@ -86,7 +87,7 @@ a:hover {
   background-color: rgb(150, 62, 80);  
 } 
 
-#banner {
+figure {
     margin: auto;
     width: 100%;
     height: 400px;
@@ -94,8 +95,6 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: -2;
 }
 
 #backgroundfilter {
@@ -112,50 +111,36 @@ a:hover {
     color: white;
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: vintage;
 }
 
 #text-figure-1 {
-    border-bottom: 2px solid white;
-    padding: 0 25px 10px 25px;
+    border-bottom: 1px solid white;
     text-align: center;
 }
 
 #text-figure-2 {
     color: white;
     text-transform: uppercase;
-    font-size: 80px;
-    margin: 5px 0 5px 0;
-    text-align: center;
+    font-size: 72px;
     font-family: vintage;
+    text-align: center;
 }
 
 #text-figure-3 {
-    border-top: 2px solid white;
+    border-top: 1px solid white;
     padding: 10px 25px 0 25px;
     text-align: center;
 }
 
 main {
-    position: relative;
-    top: -30px;
-    width: 90%;
     max-width: 1500px;
+    height: 500px;
     margin: 0 auto 50px auto;
-    border-top: 3px solid var(--cor1);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
-    background-color: white;
-}
-
-.main-section {
-    width: 95%;
-    max-width: 95%;
-    margin: 30px auto 40px auto;
-    height: auto;
     border: 1px solid black;
-    border-top: 3px solid var(--cor1);
 }
 
+<<<<<<< HEAD
 .main-section h1 {
     margin-bottom: 50px;
     text-align: center;
@@ -195,6 +180,11 @@ main {
 
 #serviços figcaption {
     margin-top: 20px;
+=======
+main > div {
+    height: 100px;
+    width: 100px;
+>>>>>>> parent of 39f2c29 (Doing sections)
     border: 1px solid black;
 }
 
@@ -207,17 +197,16 @@ footer {
     nav {
         flex-direction: column;
         position: absolute;
-        width: 90%;
-        top: 70px;
+        width: 80%;
+        top: 100%;
         margin-top: -200%;
-        transition: all 0.1s;
-        z-index: -1;
+        transition: all 0.7s;
     }
 
     a {
+        padding: 0;
         width: 100%;
         background-color: var(--cor2);
-        padding: 0;
     }
 
     label[for='botao-menu'] {
@@ -226,5 +215,4 @@ footer {
 
    #botao-menu:checked ~ nav {
     margin-top: 0;
-   }
-}
+   } 
