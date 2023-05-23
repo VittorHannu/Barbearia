@@ -18,13 +18,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     z-index: -3;
 }
 
 header { 
-    height: 70px;
+    height: 40px;
     background-color: var(--cor2);
     display: flex;
     flex-direction: row;
@@ -60,6 +64,8 @@ header {
 #botao-menu {
     display: none;
 }
+
+
 
 label[for='botao-menu'] {
     color: white;
@@ -139,7 +145,7 @@ a:hover {
 main {
     position: relative;
     top: -30px;
-    width: 90%;
+    width: 70%;
     max-width: 1500px;
     margin: 0 auto 50px auto;
     border-top: 3px solid var(--cor1);
@@ -152,8 +158,6 @@ main {
     max-width: 95%;
     margin: 30px auto 40px auto;
     height: auto;
-    border: 1px solid black;
-    border-top: 3px solid var(--cor1);
 }
 
 .main-section h1 {
@@ -168,8 +172,7 @@ main {
 }
 
 #serviços > div {
-    width: 200px;
-    height: 100px;
+    width: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +181,7 @@ main {
 }
 
 #serviços img {
-    width: 50px;
+    width: 150px;
     background-color: rgb(50,205,50);
     padding: 5px;
     border-radius: 50%;
@@ -188,8 +191,37 @@ main {
     background-color: rgb(209, 230, 150);
 }
 
+#section-profissionais > h1 {
+    top: 1px;
+}
+#profissionais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#profissionais > div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profissionais img {
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 8%;
+}
+
+#profissionais p {
+    text-align: left;
+    padding: 5px;
+}
+
 footer {
-    background-color: var(--cor1);
+    background-color: #212426;
     height: 350px;
 }
 
