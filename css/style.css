@@ -165,27 +165,37 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 1px solid black;
 }
 
 #serviços > div {
-    width: 200px;
-    height: 100px;
+    width: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+#img-server {
+    background-color: var(--cor4);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 #serviços img {
-    width: 50px;
-    background-color: rgb(50,205,50);
-    padding: 5px;
-    border-radius: 50%;
+    width: 80px;
 }
 
-#serviços img:hover {
-    background-color: rgb(209, 230, 150);
+#serviços figcaption {
+    margin-top: 20px;
+    border: 1px solid black;
 }
 
 footer {
